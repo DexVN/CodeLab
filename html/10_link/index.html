@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+.link_color:link {
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.link_color:visited {
+	color: pink;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.link_color:hover {
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.link_color:active {
+	color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.link_button:link, .link_button:visited {
+	background-color: #f44336;
+	color: white;
+	padding: 15px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.link_button:hover, .link_button:active {
+	background-color: red;
+}
+		</style>
+	</head>
+	<body>
+		<h1>HTML link</h1>
+		<p><a href="https://w3schools.com">Visit W3Schools.com</a></p>
+
+		<hr>
+
+		<h1>The target Attribute</h1>
+
+		<h3><mark>_self</mark> - Default. Opens the document in the same window/tab as it was clicked</h3>
+
+		<p><a href="https://w3schools.com" target="_self">Visit W3Schools.com</a></p>
+		
+		<h3><mark>_blank</mark> - Opens the document in a new window or tab</h3>
+
+		<p><a href="https://w3schools.com" target="_blank">Visit W3Schools.com</a></p>
+
+		<h3><mark>_parent</mark> - Opens the document in the parent frame</h3>
+
+		<p><a href="https://w3schools.com" target="_parent">Visit W3Schools.com</a></p>
+		
+		<h3><mark>_top</mark> - Opens the document in the full body of the window</h3>
+
+		<p><a href="https://w3schools.com" target="_top">Visit W3Schools.com</a></p>
+
+		<hr>
+
+		<h1>Relative URLs</h1>
+
+		<p>A local link (a link to a page within the same website) is specified with a <b>relative URL</b>(without the "https://www" part:</p>
+		<p><a href="../09_color">09_color</a></p>
+
+		<hr>
+
+		<h1>Use an Image as Link</h1>
+
+		<p>The image below is a link. Try to click on it.</p>
+
+		<a href="../09_color"><img src="https://picsum.photos/200/300" alt="HTML tutorial" style="width:42px; height:42px;"></a>
+
+		<hr>
+
+		<h1>Link to an Email Address</h1>
+
+		<p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+		<p><a href="mailto:khanhld.developer@gmail.com">Send email</a></p>
+
+		<hr>
+
+		<h1>Button as a Link</h1>
+		
+		<p>Click the button to go on the different page.</p>
+
+		<button onclick="document.location='../09_color'">Color</button>
+
+		<hr>
+
+		<h1>Link Titles</h1>
+		<p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+		<a href="../09_color" title="Go to color section">Visit our color</a>
+
+		<hr>
+
+		<h1>Link Colors</h1>
+
+		<p>You can change the default colors of links</p>
+
+		<a class="link_color"  href="../09_color" target="_blank">HTML color</a>
+
+		<hr>
+
+		<h1>Link Button</h1>
+		<p>A link styled as a button:</p>
+		<a class="link_button" href="../09_color" target="_blank">This is a link</a>
+
+		<hr>
+
+		<h1>Create a Bookmark in HTML</h1>
+		<p><a href="#C4">Jump to Chapter 4</a><p>
+		<p><a href="#C10">Jump to Chapter 10</a><p>
+
+
+		<h2>Chapter 1</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 2</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 3</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2 id="C4">Chapter 4</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 5</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 6</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 7</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 8</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 9</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2 id="C10">Chapter 10</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 11</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 12</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 13</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 14</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 15</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 16</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 17</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 18</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 19</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 20</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 21</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 22</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 23</h2>
+		<p>This chapter explains ba bla bla</p>
+	</body>
+</html>
