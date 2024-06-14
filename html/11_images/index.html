@@ -1,0 +1,105 @@
+<DOCTYPE html>
+<html>
+		<body>
+				<h1>HTML Images</h1>
+				<p>The HTML img <b>tag</b> is used to embed an image in a web page.</p>
+				<p>The required <b>src</b> attribute specifies the path (URL) to the image.</p>
+				<p>The required <b>alt</b> attribute provides an alternate text for an image , is the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+				<img src="https://picsum.photos/200/300" width="500" height="333">
+
+				<hr>
+
+				<h2>Image Size</h2>
+				<p>Here we use the style attribute to specify the width and height of an image:</p>
+				<img src="https://picsum.photos/200/300" alt="Images" style="width:500px; height: 600px;">
+
+				<hr>
+
+				<h2>Floating Images</h2>
+				<p><strong>Float the image to the right:</strong></p>
+
+				<p>
+					<img src="https://picsum.photos/200/300" alt="Images" style="float:right; width: 42px; height:42px;">
+				A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+				</p>
+				
+				<p><strong>Float the image to the left:</strong></p>
+				<p>
+					<img src="https://picsum.photos/200/300" alt="Images" style="float:left; width:42px; height:42px;">
+				A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floting image.
+				</p>
+
+				<hr>
+
+				<h1>Image Maps</h1>
+
+				<p>Click on the computer, the phone. or the cup of coffee to go to a new page and read more about the topic:</p>
+
+				<img src="https://www.w3schools.com/html/workplace.jpg" alt="Image" usemap="#workmap" width="400" height="379">
+
+				<map name="workmap">
+					<area shape="rect" coords="34,44,270,350" alt="Color" href="../09_color">
+						<area shape="circle" coords="377, 300, 44" href="../09_color">
+				</map>
+
+				<p>The <strong>shape="poly"</strong> cotains serveral coordinate ponts, which creates a shape formed with straight line (a polygon).</p>
+				
+				<img src="https://www.w3schools.com/html/frenchfood4.jpg" alt="French Food" usemap="#foodmap" width="450" height="675">
+
+				<map name="foodmap">
+					<area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" alt="Croissant" href="../09_color">
+				</map>
+
+				<hr>
+
+				<h2>Image map and JavaScript</h2>
+
+				<p>Click on the cup of coffee to execute a JavaScript function:</p>
+
+				<img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379">
+
+				<map name="workmap2">
+					<area shape="circle" coords="377, 300, 44" href="../09_color" onclick="myFunction()">
+				</map>
+				
+				<h2>The picture Element</h2>
+
+				<picture>
+					<source media="(min-width: 650px)">
+						<source media="(min-width: 465px)" srcset="https://www.w3schools.com/html/workplace.jpg">
+						<source media="(min-width: 465px)" srcset="https://www.w3schools.com/html/img_girl.jpg">
+						<img src="https://www.w3schools.com/html/img_girl.jpg" style="width:auto;">
+				</picture>
+
+				<p>resize the browser to see different versions of the picture loading at different viewport sizes. The browser looks for the first source the user's current vewport witdth, and fetches the image specified in the srcset attribute.</p>
+
+				<p>The img element is required as the last child tag of the picture declaration block.
+				The img element is used to provide backward compatibility for browser that do not support the picture element, or if none of the source tags matched.</p>
+
+				<hr>
+
+				<h2>HTML Background Images</h2>
+
+				<p>A background image for a p element:</p>
+
+				<p style="background-image:url('https://picsum.photos/200/300');">
+				You can specify background images <br>
+				for any visible HTML element. <br>
+				In this example, the background image <br>
+				is specified for a p element. <br>
+				By default, the background-image<br>
+				will repeat itself in the direction(s)<br>
+				where it is smaller than the element<br>
+				where it is specified. (Try resizing the<br>
+				browser window to see how the <br>
+				background image behaves.
+				</p>
+
+				<hr>
+			<script>
+				function myFunction() {
+					alert("You clicked the coffee cup!");
+				}
+			</script>
+		</body>
+</html>
