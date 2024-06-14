@@ -1,0 +1,54 @@
+<!DOCTYPE htmli>
+<html>
+	<head>
+		<style>
+			table, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+			tr:nth-child(even){
+				background-color: rgba(150, 212, 212, 0.4);
+			}
+			th:nth-child(even), td:nth-child(even) {
+				background-color: rgba(150, 212, 212, 0.4);
+			}
+
+		</style>
+	</head>
+	<body>
+		<h2>Striped Table</h2>
+		<p>for zebra-striped tables, use the nth-child() selector and add a backgroound-color to all even(ro odd) table rows:</p>
+
+		<table style="width:100%">
+			<tr>
+				<th>MON</th>
+				<th>TUE</th>
+				<th>WED</th>
+				<th>THU</th>
+				<th>FRI</th>
+				<th>SAT</th>
+				<th>SUN</th>
+			</tr>
+			<tr>
+				<td> 1 </td>
+				<td> 2 </td>
+				<td> 3 </td>
+				<td> 4 </td>
+				<td> 5 </td>
+				<td> 6 </td>
+				<td> 7 </td>
+				<td> 8 </td>
+			</tr>
+			<tr>
+                                <td> 1 </td>
+                                <td> 2 </td>
+                                <td> 3 </td>
+                                <td> 4 </td>
+                                <td> 5 </td>
+                                <td> 6 </td>
+                                <td> 7 </td>
+                                <td> 8 </td>
+                        </tr>
+		</table>
+	</body>
+</html>
