@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.city {
+				background-color: tomato;
+				color: white;
+				border: 2px solid black;
+				margin: 20px;
+				padding: 20px;
+			}
+			.note {
+				font-size: 120%;
+				color: red;
+			}
+			.main {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="city main">
+			<h2>London</h2>
+			<p>London is the capital city of England.</p>
+			<p>London has over 13 million inhabitants.</p>
+		</div>
+
+		<div class="city">
+			<h2>Oslo</h2>
+			<p>Oslo is the capital city of Norway.</p>
+			<p>Oslo has over 600.000 inhabitants.</p>
+		</div>
+
+		<div class="city"> 
+			<h2>Rome</h2>
+			<p>Rome is the capital city of Italy.</p>
+			<p>Rome has almost 3 million inhabitants.</p>
+		</div>
+
+		<hr>
+
+		<h1>My <span class="note">Important</span> Heading</h1>
+		<p>This is some <span class="note">important</span> text.</p>
+
+		<hr>
+
+		<h2 class="city">Paris</h2>
+		<p class="city">Paris is the capital of France.</p>
+
+		<hr>
+
+		<button onclick="myFunction()">Hide elements</button>
+		<script>
+			function myFunction() {
+				var x = document.getElementsByClassName("city");
+				for (var i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</html>
