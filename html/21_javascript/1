@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<h1>My First JavaScript</h1>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+
+	<p id="demo"></p>
+
+	<p id="demo2">This is a demonstration</p>
+
+	<script>
+		document.getElementById("demo").innerHTML = "Hello JavaScript!";
+
+		function myFunction() {
+			document.getElementById("demo").innerHTML = "Hello JavaScript!";
+		}
+	</script>
+</html>
