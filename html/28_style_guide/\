@@ -1,7 +1,0 @@
-<!DOCTYPE html>
-<html>
-	<body>
-		<h2>Always Declare Document Type</h2>
-		&lt;!DOCTYPE html&gt;
-	</body>
-</html>
