@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1>The input value attribute</h1>
+
+		<p>The value attribute specifies an initial value for an input field:</p>
+
+		<form action="/action_page.php">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value="John"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value="Doe"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<hr>
+
+		<h1>The input readonly attribute</h1>
+
+		<p>The readonly attribute specfifies that an input field should be read-only (cannot be changed):</p>
+
+		<form action="/action_page.php">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value="John" readonly><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value="Doe"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<hr>
+
+		<h1>The input disabled attribute</h1>
+
+		<p>The disabled attribute specifies that an input field should be disabled (unusable and un-clickable):</p>
+
+		<form action="/action_page.php">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value="John" disabled><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value="Doe"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<hr>
+
+		<h1>The input size attribute</h1>
+
+		<p>The size attribute specifies the width (in characters) of an input fiels:</p>
+
+		<form action="/action_page.php">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" size="35"><br>
+			<label for="pin">PIN:</label><br>
+			<input type="text" id="pin" name="pin" size="6"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<hr>
+
+		<h1>The input maxlength attribute</h1>
+
+		<p>The maxlength attribute specifies the maximum number of characters allowed in an input field:</p>
+
+		<form action="/action_page.php">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" size="50"><br>
+			<label for="pin">PIN:</label><br>
+			<input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<hr>
+
+		<h1>The input min and max attributes</h1>
+
+		<p>The min and max attributes specify the minimum and maximum values for an input element.</p>
+
+		<form action="/action_page.php">
+			<label for="datemax">Enter a date before 1980-01-01:</label>
+			<input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+			<label for="datemin">Enter a date after 2000-01-01:</label>
+		</form>
+	</body>
+</html>
