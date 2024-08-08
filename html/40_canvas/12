@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+			Your browser does not support the HTML canvas tag.
+		</canvas>
+
+		<hr>
+		
+		<canvas id="myCanvas2" width="200" height="100" style="border: 1px solid #000000">
+			Your browser does not support the HTML canvas tag.
+		</canvas>
+		
+		<hr>
+
+		<canvas id="myCanvas3" width="200" height="100" style="border: 1px solid #000000">
+			Your browser doe snot support the HTML canvas tag.
+		</canvas>
+
+		<hr>
+
+		<canvas id="myCanvas4" width="200" height="100" style="border: 1px solid #000000">
+			Your browser does not support the HTML canvas tag.
+		</canvas>
+
+		<hr>
+
+		<canvas id="myCanvas5" width="200" height="100" style="border: 1px solid #000000">
+			Your browser does not support the HTML canvas tag.
+		</canvas>
+
+		<hr>
+
+		<canvas id="myCanvas6" width="200" height="100" style="border: 1px solid #d3d3d3;">
+			Your browser does not support the HTML canvas tag.
+		</canvas>
+
+		<hr>
+
+		<p>Image to use:</p>
+		<img id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277">
+
+		<canvas id="myCanvas7" width="200" height="100" style="border: 1px solid #d3d3d3;">
+			Your browser does not support the HTML canvas tag.
+		</canvas>
+
+		<p><button onclick="myCanvas()">Try id</button></p>
+	<script>
+			let c = document.getElementById("myCanvas");
+			let ctx = c.getContext("2d");
+			ctx.moveTo(0,0);
+			ctx.lineTo(200, 100);
+			ctx.stroke();
+
+			let c2 = document.getElementById("myCanvas2");
+			let ctx2 = c2.getContext("2d");
+			ctx2.beginPath();
+			ctx2.arc(95,50,40,0,2*Math.PI);
+			ctx2.stroke();
+			
+			let c3 = document.getElementById("myCanvas3");
+			let ctx3 = c3.getContext("2d");
+			ctx3.font = "30px Arial";
+			ctx3.fillText("Hello World", 20, 50);
+
+			let c4 = document.getElementById("myCanvas4");
+			let ctx4 = c4.getContext("2d");
+			ctx4.font = "30px Arial";
+			ctx4.strokeText("Hello World",10,50);
+
+			let c5 = document.getElementById("myCanvas5");
+			let ctx5 = c5.getContext("2d");
+			// Create gradient
+			let grd = ctx5.createLinearGradient(0,0,200,0);
+			grd.addColorStop(0, "red");
+			grd.addColorStop(1, "white");
+			// Fill with gradient
+			ctx5.fillStyle = grd;
+			ctx5.fillRect(10,10,150,80);
+
+			let c6 = document.getElementById("myCanvas6");
+			let ctx6 = c6.getContext("2d");
+
+			// Create gradient
+			let grd2 = ctx6.createRadialGradient(75,50,5,90,60,100);
+			grd2.addColorStop(0,"red");
+			grd2.addColorStop(1,"white");
+
+			// Fill with gradient
+			ctx6.fillStyle = grd2;
+			ctx6.fillRect(10,10,150,80);
+
+			function myCanvas() {
+				let c = document.getElementById("myCanvas7");
+				let ctx = c.getContext("2d");
+				let img = document.getElementById("scream");
+				ctx.drawImage(img,10,10);
+			}
+		</script>
+	</body>
+</html>
