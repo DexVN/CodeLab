@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base href="http://localhost/">
+	</head>
+	<body>
+		<h1>Getting server updates</h1>
+		<p id="result"></p>
+
+		<script>
+			if (typeof(EventSource) !== "undefined") {
+				let source = new EventSource("demo_sse.php");
+				source.onmessage = function(event) {
+					document.getElementById("result").innerHTML += event.data + "<br>";
+				}
+			} else {
+				document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+			}
+		</script>
+	</body>
+</html>
