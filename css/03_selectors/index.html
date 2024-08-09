@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			p {
+				text-align: center;
+				color: blue;
+			}
+
+			#para1 {
+				text-align: center;
+				color: red;
+			}
+
+			.center {
+				text-align: center;
+				color: green;
+			}
+
+			p.center2 {
+				text-align: center;
+				color: pink;
+			}
+
+			p.large {
+				font-size: 300%;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Every paragraph will be affected by the style.</p>
+			<p>And me!</p>
+
+		<hr>
+
+		<p id="para1">Hello World!</p>
+		<p>This paragraph is not affected by the style.</p>
+
+		<hr>
+
+		<h1 class="center">Red and center-aligned heading</h1>
+		<p class="center">Read and center-aligned paragraph.</p>
+
+		<hr>
+
+		<h1 class="center2">This heading will not be affected</h1>
+		<p class="center2">This paragraph will be red and center-aligned.</p>
+		
+		<hr>
+
+		<h1 class="center2">This heading will not be affected</h1>
+		<p class="center2">This paragraph wwill be red and center-aligned.</p>
+		<p class="center2 large">This paragraph will be red, center-aligned, and in a large font-size</p>
+	</body>
+</html>
