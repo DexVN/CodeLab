@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base href="https://www.w3schools.com/css/">
+		<style>
+			div {
+				border: 1px solid black;
+				padding: 10px;
+				width: 200px;
+				height: 200px;
+				text-align: justify;
+			}
+
+			p.a {
+				text-align-last: right;
+			}
+
+			p.b {
+				text-align-last: center;
+			}
+
+			p.c {
+				text-align-last: justify;
+			}
+
+			p.ex1 {
+				direction: rtl;
+				unicode-bidi: bidi-override;
+			}
+
+			img.a {
+				vertical-align: baseline;
+			}
+
+			img.b {
+				vertical-align: text-top;
+			}
+
+			img.c {
+				vertical-align: text-bottom;
+			}
+
+			img.d {
+				vertical-align: sub;
+			}
+
+			img.e {
+				vertical-align: super;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Example text-align: justify</h1>
+
+		<p>The text-align: justify; value stretches the lines so that each line has equal width (like in newspapaers and magazines).</p>
+
+		<div>
+			In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'
+		</div>
+
+		<hr>
+
+		<h1>The text-align-last Property</h1>
+
+		<h2>text-align-lat: right:</h2>
+		<p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+		<h2>text-align-last: center:</h2>
+		<p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+		<h2>text-align-last: justify:</h2>
+		<p class="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+		
+		<hr>
+
+		<p>This is the default text direction.</p>
+
+		<p class="ex1">This is right-to-left text direction.</p>
+
+		<hr>
+
+		<h1>The veritcal-align Property</h1>
+
+		<h2>vertical-align: baseline (default):</h2>
+		<p>An <img class="img_a" src="sqpurple.gif" width="9" height="9"> image with a default alignment.</p>
+
+		<h2>vertical-align: text-top:</h2>
+		<p>An <img class="img_b" src="sqpurple.gif" width="9" height="9"> image with a text-bottom alignment.</p>
+
+		<h2>vertical-align: sub:</h2>
+		<p>An <img class="img_c" src="sqpurple.gif" width="9" height="9"> image with a sub alignment.</p>
+
+		<h2>vertical-align: sup:</h2>
+		<p>An <img class="e" src="sqpurple.gif" width="9" height="9"> image with a super alignment.</p>
+	</body>
+</html>
