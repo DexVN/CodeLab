@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				margin: 0;
+				font-size: 28px;
+			}
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				position: sticky;
+				top: 0;
+				width: 100%;
+			}
+
+			li {
+				float: left;
+				border-right: 1px solid #bbb;
+			}
+
+			li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+				background-color: #111;
+			}
+
+			li a.active {
+				background-color: #04AA6D;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+		  <h2>Scroll Down</h2>
+		  <p>Scroll down to see the sticky effect.</p>
+		</div>
+
+		<ul>
+			<li><a class="active"  href="#home">Home</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li style="float: right;"><a href="#about">About</a></li>
+		</ul>
+
+
+		<div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
+		  <h1>Fixed Top Navigation Bar</h1>
+		  <h2>Scroll this page to see the effect</h2>
+		  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		  <p>Some text some text some text some text..</p>
+		</div>
+
+		<p><b>Note:</b> If a !DOCTYPE is not specified, floating items can produce unexpected results.</p>
+		<p>A background color is added to the links to show the link area. The whole link area is clickable, not just the text.</p>
+		<p><b>Note:</b> overflow:hidden is added to the ul element to prevent li elements from going outside of the list.</p>
+	</body>
+</html>
