@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base href="https://www.w3schools.com/css/">
+		<style>		
+			a[target] {
+				background-color: yellow;
+			}
+
+			a[target="_blank"] {
+				background-color: green;
+			}
+
+			[title~="flower"] {
+				border: 5px solid yellow;
+			}
+
+			[class|="top"] {
+				background:yellow;
+			}
+
+			[class^="top"] {
+				background: green;
+			}
+
+			[class$="test"] {
+				background: yellow;
+			}
+			
+			[class*="te"] {
+				background: green;
+			}
+
+			input[type="text"] {
+				width: 150px;
+				display: block;
+				margin-bottom: 10px;
+		:	background-color: yellow;
+			}
+
+			input[type="button"] {
+				width: 120px;
+				margin-left: 35px;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>CSS [attribute] Selector</h2>
+
+		<p>The links with a target attribute gets a yellow background:</p>
+
+		<a href="https://www.w3schools.com">w3schools.com</a>
+		<a href="http://www.disney.com" target="_blank">disney.com</a>
+		<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+		
+		<hr>
+		
+		<h2>CSS [attribute~="value"] Selector</h2>
+
+		<img src="klematis.jpg" title="klematis flower" width="150" height="113">
+		<img src="img_flwr.gif" title="flower" width="224" height="162">
+		<img src="img_tree.gif" title="tree" width="200" height="358">
+
+		<hr>
+
+		<h2>CSS [attribute|="value"] Selector</h2>
+		<h2>CSS [attribute^="value"] Selector</h2>
+		<h1 class="top-header">Welcome</h1>
+		<p class="top-text">Hello world!</p>
+		<p class="topcontent">Are you learning CSS?</p>
+
+		<hr>
+
+		<h2>CSS [attribute$="value"] Selector</h2>
+
+		<div class="first_test">The first div element.</div>
+		<div class="second">The second div element.</div>
+		<div class="my-test">The third div element.</div>
+		<p class="mytest">This is some text in a paragraph.</p>
+
+		<hr>
+
+		<h2>Styling Forms</h2>
+
+		<form name="input" action="" method="get">
+		  Firstname:<input type="text" name="Name" value="Peter" size="20">
+		  Lastname:<input type="text" name="Name" value="Griffin" size="20">
+		  <input type="button" value="Example Button">
+		</form>
+	</body>
+</html>
