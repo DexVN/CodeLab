@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base href="https://www.w3schools.com/css/">
+		<style>
+			html {
+				background: url(img_man.jpg) no-repeat center fixed;
+				background-size: cover;
+			}
+			#example1 {
+				background-image: url(img_flwr.gif), url(paper.gif);
+				background-position: right bottom, left top;
+				background-repeat: no-repeat, repeat;
+				padding: 15px;
+			}
+			
+			#example2 {
+				background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif)  left top repeat;
+				padding: 15px;
+			}
+
+			#example3 {
+				border: 1px solid black;
+				background: url(img_flwr.gif);
+				background-size: 100px 80px;
+				background-repeat: no-repeat;
+				padding: 15px;
+			}
+
+			#example4 {
+				border: 1px solid black;
+				background: url(img_flwr.gif);
+				background-repeat: no-repeat;
+				padding: 15px;
+			}
+
+			.div1 {
+				border: 1px solid black;
+				height: 120px;
+				width: 150px;
+				background: url(img_flwr.gif);
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			
+			.div2 {
+				border: 1px solid black;
+				height: 120px;
+				width: 150px;
+				background: url(img_flwr.gif);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			.div3 {
+				border: 1px solid black;
+				height: 120px;
+				width: 150px;
+				background: url(img_flwr.gif);
+				background-repeat: no-repeat;
+			}
+
+			#example5 {
+				background: url(img_tree.gif) left top no-repeat,
+					url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+				padding: 15px;
+				background-size: 50px, 130px, auto;
+			}
+		</style>
+	</head>
+	<body>
+
+		<h1>Multiple Backgrounds</h1>
+		<p>The following div element has two background images:</p>
+
+		<div id="example1">
+			<h1>Lorem Ipsum Dolor</h1>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<hr>
+
+		<div id="example2">
+			<h1>Lorem Ipsum Dolor</h1>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+		</div>
+		
+		<hr>
+
+		<h1>The background-size Property</h1>
+
+		<p>Resized background-image:</p>
+		<div id="example3">
+			<h2>Lorem Ipsum Dolor</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<p>Original size of the background-image:</p>
+		<div id="example4">
+			<h2>Lorem Ipsum Dolor</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<hr>
+
+		<h1>The background-size Property</h1>
+
+		<h2>background-size: contain:</h2>
+		<div class="div1">
+		<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+
+		<h2>background-size: cover:</h2>
+		<div class="div2">
+		<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+
+		<h2>No background-size defined:</h2>
+		<div class="div3">
+		<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+
+		<p>Original image:</p>
+		<img src="img_flwr.gif" alt="Flowers" width="224" height="162">
+
+		<hr>
+
+		<div id="example5">
+			<h1>Lorem Ipsum Dolor</h1>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+	</div>
+	</body>
+</html>
