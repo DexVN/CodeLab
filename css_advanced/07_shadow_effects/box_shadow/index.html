@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base href="https://www.w3schools.com/css/">
+		<style>
+			div.div1 {
+				width: 300px;
+				height: 100px;
+				padding: 15px;
+				background-color: coral;
+				/* box-shadow: 10px 10px; */
+				/* box-shadow: 10px 10px lightblue; */
+				/* box-shadow: 10px 10px 5px lightblue; */
+				/* box-shadow: 10px 10px 5px 14px lightblue; */
+				/* box-shadow: 10px 10px 5px lightblue inset; */
+				box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+			}
+
+			div.card {
+				width: 250px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				text-align: center;
+			}
+
+			div.header {
+				background-color: #4CAF50;
+				color: white;
+				padding: 10px;
+				font-size: 40px;
+			}
+
+			div.container {
+				padding: 10px;
+			}
+
+			div.polaroid {
+				width: 250px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				text-align: center;
+			}
+
+			div.container2 {
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>The box-shadow Property</h1>
+
+		<div class="div1">This is a div element with a box-shadow</div>
+
+		<hr>
+
+		<h1>Create Cards</h1>
+
+		<p>The box-shadow property can b eused to create paper-like cards:</p>
+
+		<div class="card">
+			<div class="header">
+				<h1>1</h1>
+			</div>
+
+			<div class="container">
+				<p>January 1, 2021</p>
+			</div>
+		</div>
+
+		<hr>
+
+		<h1>Create Polaroid Images</h1>
+
+		<p>The box-shadow property can be used to create polaroid images:</p>
+
+		<div class="polaroid">
+			<img src="rock600x400.jpg" alt="Norway" style="width: 100%">
+			<div class="container2">
+				<p>Hardanger, Norway</p>
+			</div>
+		</div>
+	</body>
+</html>
