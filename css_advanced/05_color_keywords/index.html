@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base href="https://www.w3schools.com/css/">
+		<style>
+			body {
+				background-image: url("paper.gif");
+			}
+
+			div.ex1 {
+				background-color: lightgreen;
+				border: 2px solid black;
+				padding: 15px;
+			}
+
+			div.ex2 {
+				background-color: transparent;
+				border: 2px solid black;
+				padding: 15px;
+			}
+
+			div.ex3 {
+				color: blue;
+				border: 10px solid currentcolor;
+				padding: 15px;
+			}
+
+			div.ex4 {
+				color: purple;
+			}
+
+			div.ex5 {
+				background-color: currentcolor;
+				box-shadow: 0px 0px 15px currentcolor;
+				border: 5px solid currentcolor;
+				padding: 15px;
+			}
+
+			div.ex5 p {
+				color: white;
+			}
+
+			span {
+				border: inherit;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<h2>The transparent Keyword</h2>
+
+		<div class="ex1">This div has a light green background.</div>
+		<br>
+		<div class="ex2">This div has a transparent background.</div>
+
+		<hr>
+
+		<h2>The currentcolor Keyword</h2>
+
+		<p>The currentcolor keyword refers to the current value of the color property of an element.</p>
+
+		<div class="ex3">This div element has a blue text color and a blue border.</div>
+
+		<hr>
+		
+		<p>This is some text in the div part...</p>
+
+		<div class="ex4">
+			<div class="ex5">
+				<p>This div's background color is set to the current color value of the div parent element.</p>
+			</div>
+		</div>
+
+		<hr>
+
+		<h2>The inherit Keyword</h2>
+
+		<div>Here, the<span>span element's</span> border setttings will be inherited from the parent element.</div>
+		<br>
+
+		<div style="border: 2px dotted blue;">Here, the <span>span element's</span> border settings will also be inherited from the parent element.</div>
+	</body>
+</html>
