@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.tooltip {
+				position: relative;
+				display: inline-block;
+				border-bottom: 1px dotted black;
+			}
+
+			.tooltip .tooltiptext {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+				top: -5px;
+				/* left: 105%; */
+				/* right: 105%; */
+				/* bottom: 100%; */
+				/* top: 150%; */
+				/* bottom: 150%; */
+				/* left: 50%; */
+				/* left: 110%; */
+				right: 110%;
+				/* margin-left: -60px; */ /* Use half of the width (120/2 = 60), to center the tooltip */
+
+				/* Fade in tooltip - takes 1 second to go from 0% to 100% opacity: */
+				opacity: 0;
+				transition: opacity 1s;
+			}
+
+			.tooltip .tooltiptext::after {
+				content: "";
+				position: absolute;
+				/* bottom: 100%; */
+				/* top: 100%; */
+				/* left: 50%; */
+				/* right: 100%; */
+				/* margin-left: -5px; */
+				top: 50%;
+				left: 100%;
+				margin-top: -5px;
+				border-width: 5px;
+				border-style: solid;
+				/* border-color: transparent transparent black transparent; */
+				/* border-color: black transparent transparent transparent; */
+				/* border-color: transparent black transparent transparent; */
+				border-color: transparent transparent transparent black;
+			}
+
+			.tooltip:hover .tooltiptext {
+				visibility: visible;
+				opacity: 1;
+			}
+		</style>
+	</head>
+	<body style="text-align: center">
+		<h2>Basic Tooltip</h2>
+
+		<p>Move the mouse over the text below:</p>
+
+		<div class="tooltip">Hover over me
+			<span class="tooltiptext">Tooltip text</span>
+		</div>
+
+		<p>Note that the position of the tooltip text isn't very good. Go back to the tutorial and continue reading oin how to position the tooltip in a desirable way.</p>
+	</body>
+</html>
