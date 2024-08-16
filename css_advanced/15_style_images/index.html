@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base href="https://www.w3schools.com/css/">
+		<style>
+			.img1 {
+				border-radius: 8px;
+			}
+			
+			.img2 {
+				border-radius: 50%;
+			}
+			
+			.img3 {
+				border: 1px solid #ddd;
+				border-radius: 4px;
+				padding: 5px;
+				width: 150px;
+			}
+
+			.img4 {
+				border: 1px solid #ddd;
+				border-radius: 4px;
+				padding: 5px;
+				width: 150px;
+			}
+
+			.img4:hover {
+				box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+			}
+
+			.img5 {
+				max-width: 100%;
+				height: auto;
+			}
+
+			.img6 {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			body {
+				margin: 25px;
+			}
+
+			div.polaroid {
+				width: 80%;
+				background-color: white;
+				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+				margin-bottom: 25px;
+			}
+
+			div.container {
+				text-align: center;
+				padding: 10px 20px;
+			}
+
+			.img7 {
+				opacity: 0.5;
+			}
+
+			.container2 {
+				position: relative;
+			}
+
+			.img8 {
+				width: 100%;
+				height: auto;
+				opacity: 0.3;
+			}
+
+			.center {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 18px;
+			}
+
+			.topleft {
+				position: absolute;
+				top: 8px;
+				left: 16px;
+				font-size: 18px;
+			}
+
+			.topright {
+				position: absolute;
+				top: 8px;
+				right: 16px;
+				font-size: 18px;
+			}
+
+			.bottomleft {
+				position: absolute;
+				bottom: 8px;
+				left: 16px;
+				font-size: 18px;
+			}
+
+			.bottomright {
+				position: absolute;
+				bottom: 8px;
+				right: 16px;
+				font-size: 18px;
+			}
+
+			.img9 {
+				width: 33.33%;
+				height: auto;
+				float: left;
+				max-width: 235px;
+			}
+
+			.blur {filter: blur(4px);}
+			.brightness {filter: brightness(250%);}
+			.contrast {filter: contrast(180%);}
+			.grayscale {filter: grayscale(100%);}
+			.huerotate {filter: hue-rotate(180deg);}
+			.invert {filter: invert(100%);}
+			.opacity {filter: opacity(50%);}
+			.saturate {filter: saturate(7);}
+			.sepia {filter: sepia(100%);}
+			.shadow {filter: drop-shadow(8px 8px 10px green);}
+		</style>
+	</head>
+	<body>
+
+		<h2>Rounded Image</h2>
+
+		<p>Use the border-radius property to create rounded images:</p>
+
+		<img class="img1" src="paris.jpg" alt="Paris" width="300" height="300">
+
+		<hr>
+
+		<h2>Circled Image</h2>
+
+		<p>Use the border-radius property to create circled images:</p>
+
+		<img class="img2" src="paris.jpg" alt="Paris" width="300" height="300">
+		
+		<hr>
+
+		<h2>Thumbnail Image</h2>
+
+		<p>Use the border property to create thumbnail images:</p>
+
+		<img class="img3" src="paris.jpg" alt="Paris" style="width: 150px">
+
+		<hr>
+
+		<h2>Thumbnail Image as Link</h2>
+
+		<p>Use the border property to create thumbnail images. Wrap an anchor around the image to use it as a link.</p>
+		<p>Hover over the image and click on it to see the effect.</p>
+
+		<a target="_blank" href="paris.jpg">
+			<img class="img4" src="paris.jpg" alt="Paris" style="width:150px">
+		</a>
+
+		<hr>
+
+		<h2>Responsive Image</h2>
+
+		<p>Responsive images will automatically adjust to fit the size of the screen.</p>
+		<p>Resize the browser window to see the effect:</p>
+
+		<img class="img5"  src="img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300">
+
+		<hr>
+
+		<h2>Center an Image</h2>
+
+		<p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+		<img class="img6" src="paris.jpg" alt="Paris" style="width: 50%">
+
+		<hr>
+
+		<h2>Responsive Polaroid Images / Cards</h2>
+
+		<div class="polaroid">
+			<img src="img_5terre.jpg" alt="5 Terre" style="width: 100%">
+			<div class="container">
+				<p>Cinque Terre</p>
+			</div>
+		</div>
+
+		<div class="polaroid">
+			<img src="lights600x400.jpg" alt="Norther Lights" style="width:100%">
+			<div class="container">
+				<p>Northern Lights</p>
+			</div>
+		</div>
+
+		<hr>
+
+		<h2>Imageg Transparency</h2>
+
+		<p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+
+		<p>Image with 50% opacity:</p>
+		<img class="img7" src="img_forest.jpg" alt="Forest" width="170" height="100">
+
+		<hr>
+
+		<h2>Image Text</h2>
+
+		<p>Add some text to an image in the top left corner:</p>
+
+		<div class="container2">
+			<img class="img8" src="img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300">
+			<div class="topleft">Top Left</div>
+			<div class="topright">Top Right</div>
+			<div class="bottomleft">Bottom Left</div>
+			<div class="bottomright">Bottom Right</div>
+			<div class="center">Centered</div>
+		</div>
+
+		<hr>
+
+		<h2>Image Filters</h2>
+
+		<p><strong>Note:</strong> The filterr property is not supported in Internet Explorer or Edge 12.</p>
+
+		<img class="img9" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+		<img class="img9 blur" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+		<img class="img9 brightness" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+		<img class="img9 contrast" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+		<img class="img9 grayscale" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+		<img class="img9 huerotate" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+		<img class="img9 invert" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+		<img class="img9 opacity" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+		<img class="img9 saturate" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+		<img class="img9 sepia" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+		<img class="img9 shadow" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+	</body>
+</html>
+
+
+
