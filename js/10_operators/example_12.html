@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <hr>
+    <p id="demo2"></p>
+    <hr>
+    <p id="demo3"></p>
+    <hr>
+    <p id="demo4"></p>
+    <hr>
+    <p id="demo5"></p>
+    <hr>
+    <p id="demo6"></p>
+    <hr>
+    <p id="demo7"></p>
+    <script>
+        // Same as 0101 & 0001 => 0001 => 1
+        /*
+            0101
+            ^
+            0001
+            ----
+            0
+
+            0101
+             ^            
+            0001
+            ----
+            0
+
+            0101
+              ^
+            0001
+            ----
+            0
+
+            0101
+               ^
+            0001
+            ----
+            1
+
+            0101
+            &
+            0001
+            ----
+            0001
+        */
+        document.getElementById("demo1").innerHTML = 5 & 1;
+
+        // Same as 0101 | 0001 => 0101 => 5
+        document.getElementById("demo2").innerHTML = 5 | 1;
+
+        // Same as ~0101 => convert to 32 bits => 11111111111111111111111111111010 => -6
+        document.getElementById("demo3").innerHTML = ~5;
+
+        // Same as 0101 << 1 => 1010 => 10
+        document.getElementById("demo4").innerHTML = 5 << 1;
+
+        // Same as 0101 >> 1 => 0010 => 2
+        document.getElementById("demo5").innerHTML = 5 >> 1;
+
+        // Same as 0101 >>> 1 => 0010 => 2
+        document.getElementById("demo6").innerHTML = 5 >>> 1;
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <hr>
+    <p id="demo2"></p>
+    <hr>
+    <p id="demo3"></p>
+    <hr>
+    <p id="demo4"></p>
+    <hr>
+    <p id="demo5"></p>
+    <hr>
+    <script>
+        let x1 = 10;
+        x1 -= 5;
+        document.getElementById("demo1").innerHTML = x1;
+
+        let x2 = 15;
+        x2 *= 5;
+        document.getElementById("demo2").innerHTML = x2;
+
+        let x3 = 20;
+        x3 /=5;
+        document.getElementById("demo3").innerHTML = x3;
+
+        let x4 = 25;
+        x4 %= 6;
+        document.getElementById("demo4").innerHTML = x4;
+
+        let x5 = 30;
+        x5 **= 2;
+        document.getElementById("demo5").innerHTML = x5;
+    </script>
+</body>
+</html>
