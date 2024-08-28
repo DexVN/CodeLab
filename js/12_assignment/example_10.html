@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p>The ??= operator is sued between two values.  If the first value is undefined or null, the second value is assigned.</p>
+    <p id="demo3"></p>
+    <script>
+        let x = 2;
+        x &&= 5;
+        document.getElementById("demo").innerHTML = x;
+
+        let y = 0;
+        y ||= 5;
+        document.getElementById("demo2").innerHTML = y;
+
+        let z;
+        z ??= 5;
+        document.getElementById("demo3").innerHTML = z;
+    </script>
+</body>
+</html>
