@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        let x = 16 + 4 + "Volvo";
+        document.getElementById("demo").innerHTML = x;
+
+        let y = "Volvo" + 16 + 4; 
+        document.getElementById("demo2").innerHTML = y;
+    </script>
+</body>
+</html>

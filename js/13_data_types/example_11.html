@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        let car; // Value is undefined, type is undefined
+        document.getElementById("demo").innerHTML = car + "<br>" + typeof car;
+
+        let car2 = "Volvo"; 
+        car2 = undefined;
+
+        document.getElementById("demo2").innerHTML = 
+        "<p>The value of car is " + car2 +
+        "<p>The typeof car is " + typeof car2;
+    </script>
+</body>
+</html>
