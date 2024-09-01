@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // Create an Object
+        const person = new Object();
+        
+        // Add Properties
+        person.firstName = "Duy";
+        person.lastName = "Khanh";
+        person.age = 25;
+        person.eyeColor = "black";
+
+        // Display Object content
+        document.getElementById("demo").innerHTML = person.firstName + 
+        " is " + person["age"] + " years old.";
+    </script>
+</body>
+</html>
