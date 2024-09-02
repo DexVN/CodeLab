@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        const person = {
+            firstName: "Duy",
+            lastName: "Khanh",
+            age: 25,
+            eyeColor: "blue"
+        }
+
+        document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old.";
+
+        const person2 = {
+            firstName: "Khanh",
+            lastName: "Duy",
+            age: 24,
+            eyeColor: "black"
+        }
+
+        document.getElementById("demo2").innerHTML = person["firstName"] + " is " + person.age + " years old.";
+
+        const person3 = {
+            firstName: "Duy",
+            lastName: "Khanh",
+            age: 26,
+            eyeColor: "green"
+        }
+
+        let x = "firstName";
+        let y = "age";
+        document.getElementById("demo3").innerHTML = person3[x] + " is " + person3[y] + " years old.";
+    </script>
+</body>
+</html>
