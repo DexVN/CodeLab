@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const fruits = {Bananas:300, Oranges: 200, Apples: 500};
+
+        let text = "";
+        for (let [fruit, amount] of Object.entries(fruits)) {
+            text += fruit + ": " + amount + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

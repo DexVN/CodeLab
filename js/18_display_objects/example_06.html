@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // Create an Object
+        const person = {
+            name: "Khanh",
+            age: 25,
+            city: "Thanh Hoa"
+        };
+
+        // Stringify Object
+        let myString = JSON.stringify(person);
+
+        // Display String
+        document.getElementById("demo").innerHTML = myString;
+    </script>
+</body>
+</html>
