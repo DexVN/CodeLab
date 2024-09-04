@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // Constructor function for Person Objects
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        // Create 2 Person Objects
+        const myFather = new Person("Duy", "Si", 52, "black");
+        const myMother = new Person("Thi", "Huong", 48, "black");
+
+        // Will Not Work
+        Person.nationality = "Vietnam";
+
+        // Display Nationality
+        document.getElementById("demo").innerHTML = "The nationality of my father is " + myFather.nationality;
+    </script>
+</body>
+</html>
