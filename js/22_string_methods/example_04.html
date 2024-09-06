@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The at() method return an indexed element form a string:</p>
+    <p id="demo"></p>
+    <hr>
+    <p>The bracked notation []  returns an indexed element form a string:</p>
+    <p id="demo2"></p>
+    <script>
+        const name = "W3Schools";
+        let letter = name.at(2);
+
+        document.getElementById("demo").innerHTML = letter;
+
+        const name2 = "W3schools";
+        let letter2 = name2[2];
+
+        document.getElementById("demo2").innerHTML = letter;
+    </script>
+</body>
+</html>
