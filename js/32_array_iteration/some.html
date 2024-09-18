@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const numbers = [45, 4, 9, 16, 25];
+        let someOver18 = numbers.some(myFunction);
+
+        document.getElementById("demo").innerHTML = someOver18;
+        function myFunction(value, index, array) {
+            return value > 18;
+        }
+    </script>
+</body>
+</html>

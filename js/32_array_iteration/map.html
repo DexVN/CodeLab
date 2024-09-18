@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const numbers1 = [45, 5, 9, 16, 25];
+        const numbers = numbers1.map(myFunction);
+
+        document.getElementById("demo").innerHTML = numbers;
+
+        function myFunction(value, index, array) {
+            return value * 2;
+        }
+    </script>
+</body>
+</html>
