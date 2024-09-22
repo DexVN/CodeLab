@@ -6,13 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+    <p>Two digit years will be interpreted as 19xx:</p>
     <p id="demo"></p>
     <hr>
+    <p>One digit years will be interpreted as 19xx</p>
     <p id="demo2"></p>
     <script>
-        const d = new Date(2018, 15, 24, 10, 33, 30, 0);
+        const d = new Date(99, 11, 24);
         document.getElementById("demo").innerHTML = d;
-        const d2 = new Date(2019, 3, 24, 10, 33, 30);
+        const d2 = new Date(9, 11, 24);
         document.getElementById("demo2").innerHTML = d2;
     </script>
 </body>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>6 numbers specify year, month, day, hour, minute and second: </p>
+    <p id="demo"></p>
+    <hr>
+    <p>5 numbers specify year, month, day, hour, and minute: </p>
+    <p id="demo2"></p>
+    <hr>
+    <p>4 numbers specify year, month, day, and hour:</p>
+    <p id="demo3"></p>
+    <hr>
+    <p>3 numbers specify year, month, and day:</p>
+    <p id="demo4"></p>
+    <hr>
+    <p>2 numbers specify year, month:</p>
+    <p id="demo5"></p>
+    <script>
+        const d = new Date(2018, 11, 24, 10, 33, 30);
+        document.getElementById("demo").innerHTML = d;
+        const d2 = new Date(2018, 11, 24, 10, 33);
+        document.getElementById("demo2").innerHTML = d2;
+        const d3 = new Date(2018, 11, 24, 10);
+        document.getElementById("demo3").innerHTML = d3;
+        const d4 = new Date(2018, 11, 24);
+        document.getElementById("demo4").innerHTML = d4;
+        const d5 = new Date(2018, 11);
+        document.getElementById("demo5").innerHTML = d5;
+    </script>
+</body>
+</html>

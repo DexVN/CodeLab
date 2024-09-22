@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>100000000000 milliseconds from January 01 1970 UTC is:</p>
+    <p id="demo"></p>
+    <hr>
+    <p>-100000000000 milliseconds from January 01 1970 UTC is:</p>
+    <p id="demo2"></p>
+    <hr>
+    <p>86400000 milliseconds from January 01 1970 UTC is:</p>
+    <p id="demo3"></p>
+    <hr>
+    <p>0 milliseconds from January 01 1970 UTC is:</p>
+    <p id="demo"></p>
+    <script>
+      const d = new Date(100000000000);
+      document.getElementById("demo").innerHTML = d;
+      const d2 = new Date(-100000000000);
+      document.getElementById("demo2").innerHTML = d2;
+      const d3 = new Date(86400000);
+      document.getElementById("demo3").innerHTML = d3;
+      const d4 = new Date(0);
+      document.getElementById("demo4").innerHTML = d4;
+    </script>
+</body>
+</html>
